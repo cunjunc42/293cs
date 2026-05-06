@@ -1,62 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Hernandez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+ 
 <header id="main-header">
-    <h1>Aaron Hernandez</h1>
-    <p class="tagline">Computer Science & Mathematics Student | EMERGE Scholar</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-content">
+        <img src="profile.jpg" alt="Aaron Hernandez" class="profile-pic">
+        <h1>Aaron Hernandez</h1>
+        <p class="tagline">Computer Science & Mathematics Student | EMERGE Scholar</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <button id="darkModeToggle" class="contact-btn" style="margin-left: 15px;">Toggle Dark Mode</button>
+        </nav>
+    </div>
 </header>
-
+ 
 <div class="container">
+ 
+    <!-- ── ABOUT ─────────────────────────────────────────────────────────── -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a first-generation student at Lewis & Clark College focused on the intersection of Data Science and Cybersecurity. I specialize in building data-driven solutions and conducting risk assessments to protect institutional integrity.</p>
-        
+        <div class="about-layout">
+            <img src="about.png" alt="About Me Character" class="side-img">
+            <p>I am a first-generation student at Lewis & Clark College focused on the intersection of Data Science and Cybersecurity.
+                I like to learn about the forever evolving industry of Cyber Security, often attending webinars & meeting CISO's at social gathering establishments for discussions is always fun. 
+                I specialize in building data-driven solutions and creating automated workflows to protect institutional integrity and to make everyone's life easier.
+                I love to read manga, take photos on my digital camera, draw, and spend time with those I love. I love learning & going the extra mile!
+            </p>
+        </div>
+ 
         <h3>Technical Skills</h3>
-        <ul>
-            <li><strong>Languages:</strong> Python, R, C, SQL</li>
-            <li><strong>Security:</strong> IT Risk Assessment, Linux Command Line</li>
-            <li><strong>Analytics:</strong> Advanced Excel, Statistical Modeling, RAG Pipelines</li>
-        </ul>
+        <div class="skills-layout">
+            <img src="skills.png" alt="Skills Character" class="side-img">
+            <ul>
+                <li><strong>Languages:</strong> Python, R, C, SQL</li>
+                <li><strong>Security:</strong> IT Risk Assessment, Linux Command Line</li>
+                <li><strong>Analytics:</strong> Advanced Excel, Statistical Modeling, RAG Pipelines</li>
+            </ul>
+        </div>
+ 
+        <h3>Awards & Recognition</h3>
+        <div class="award-card">
+            <!--
+                Replace award.jpg with your photo from the article.
+                Any size works — it will crop to fit. Recommended: at least 400px wide.
+            -->
+            <img src="scholarship.jpg" alt="Aaron Hernandez $100,000 Scholarship Award" class="award-img">
+            <div class="award-info">
+                <h4>$100,000 Scholarship Recipient</h4>
+                <p class="award-org">Spring ISD — Dekaney High School</p>
+                <p>Selected as a C. Jackson Grayson Scholarship recipient, recognized for academic excellence and outstanding achievement. Featured in the Houston Chronicle.</p>
+                <a href="https://www.houstonchronicle.com/neighborhood/spring-klein/article/spring-isd-dekaney-student-100000-scholarship-17850161.php"
+                   target="_blank"
+                   class="award-link">
+                    Read the Article →
+                </a>
+            </div>
+        </div>
     </section>
-
+ 
+    <!-- ── PROJECTS ───────────────────────────────────────────────────────── -->
     <section id="projects">
         <h2>Technical Projects</h2>
-        
-        <div class="project-card">
-            <h3>Data for Good: Growing Gardens</h3>
-            <p>Collaborated with a nonprofit to standardize multi-year datasets using Python and R, creating a sustainable framework for community food access data.</p>
-            <a href="https://github.com/your-username/growing-gardens" target="_blank">View on GitHub</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Institutional IT Risk Assessment</h3>
-            <p>Conducted a comprehensive audit identifying 15+ risks. Developed a structured risk matrix to score threats like data leakage and phishing.</p>
-            <a href="#">View Technical Report</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Electric Vehicle Sustainability Analysis</h3>
-            <p>Built a statistical model in R to evaluate EV battery longevity and cost-effectiveness for policymakers.</p>
-            <a href="#">View Data Analysis</a>
+        <div class="project-grid">
+ 
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project1.png" alt="Growing Gardens Project" class="project-img">
+                </div>
+                <h3>Data for Good: Growing Gardens</h3>
+                <p>Collaborated with a Portland nonprofit to redesign their data collection process for the Youth Grow program — building a standardized Google Form, automated spreadsheet pipeline, and a full databook so future analysts can understand the data.</p>
+                <a href="growing-gardens.pdf" target="_blank" class="card-link">View Presentation (PDF) ↗</a>
+            </div>
+ 
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project2.png" alt="IT Risk Assessment Project" class="project-img">
+                </div>
+                <h3>Institutional IT Risk Assessment</h3>
+                <p>Conducted a comprehensive audit identifying 15+ risks. Developed a structured risk matrix to score threats like data leakage and phishing.</p>
+                <a href="#" class="card-link">Coming Soon</a>
+            </div>
+ 
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project3.png" alt="EV Analysis Project" class="project-img">
+                </div>
+                <h3>Electric Vehicle Sustainability Analysis</h3>
+                <p>Built a full statistical analysis in R examining EV adoption trends, battery longevity, and cost-effectiveness — including regression models, visualizations, and policy recommendations.</p>
+                <a href="ev-analysis.html" target="_blank" class="card-link">View Full Report ↗</a>
+            </div>
+ 
         </div>
     </section>
-    
+ 
+    <!-- ── GALLERY ────────────────────────────────────────────────────────── -->
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>A glimpse into life outside the terminal — photos, sketches, and things I love.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="gallery1.jpg" alt="Photo 1">
+            </div>
+            <div class="gallery-item gallery-item--wide">
+                <img src="gallery2.jpg" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery3.jpg" alt="Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery4.jpg" alt="Photo 4">
+            </div>
+            <div class="gallery-item gallery-item--wide">
+                <img src="gallery5.jpg" alt="Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery6.jpg" alt="Photo 6">
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ── CONTACT ────────────────────────────────────────────────────────── -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>I am currently seeking internship opportunities in AI, Data Analytics, and Cybersecurity. Feel free to reach out for collaborations!</p>
-    
-        <a href="mailto:cunjunc42@outlook.com" class="contact-btn">Email Me</a>
-    
+ 
+        <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required maxlength="100">
+ 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required maxlength="255">
+ 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required maxlength="5000"></textarea>
+ 
+            <button type="submit" id="submitBtn" class="contact-btn">Send Message</button>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+ 
         <div class="social-links">
-        <br>
-        <a href="https://linkedin.com/in/aaron-hernandez-80b20a298" target="_blank">LinkedIn Profile</a> | 
-
-    </div>
+ 
+            <a href="mailto:cunjunc42@outlook.com" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                Email Me
+            </a>
+ 
+            <a href="https://linkedin.com/in/aaron-hernandez-80b20a298" target="_blank" class="social-btn social-btn--linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
+                LinkedIn
+            </a>
+ 
+            <a href="https://github.com/cunjunc42" target="_blank" class="social-btn social-btn--github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+ 
+        </div>
     </section>
-</section>
 </div>
+ 
+<footer>
+    <p>&copy; 2026 Aaron Hernandez. All rights reserved.</p>
+</footer>
+ 
+<script src="script.js"></script>
+ 
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+ 
+        const btn    = document.getElementById("submitBtn");
+        const status = document.getElementById("formStatus");
+ 
+        btn.disabled     = true;
+        btn.textContent  = "Sending…";
+        status.className = "form-status";
+        status.textContent = "";
+ 
+        const payload = {
+            name:    document.getElementById("name").value.trim(),
+            email:   document.getElementById("email").value.trim(),
+            message: document.getElementById("message").value.trim(),
+        };
+ 
+        try {
+            const res  = await fetch("/form", {
+                method:  "POST",
+                headers: { "Content-Type": "application/json" },
+                body:    JSON.stringify(payload),
+            });
+ 
+            const data = await res.json();
+ 
+            if (res.ok && data.success) {
+                status.classList.add("form-status--success");
+                status.textContent = data.message;
+                e.target.reset();
+            } else {
+                status.classList.add("form-status--error");
+                status.textContent = data.error || "Something went wrong. Please try again.";
+            }
+        } catch (err) {
+            status.classList.add("form-status--error");
+            status.textContent = "Could not reach the server. Please try again later.";
+        } finally {
+            btn.disabled    = false;
+            btn.textContent = "Send Message";
+        }
+    });
+</script>
+ 
+</body>
+</html>
+ 
